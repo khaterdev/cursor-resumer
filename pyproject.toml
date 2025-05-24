@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cursor-resumer"
+version = "1.0.0"
+description = "Automatically clicks resume button when Cursor AI hits 25 tool call limit"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "khaterdev", email = "mostafa@khater.dev"},
+]
+keywords = ["cursor", "ai", "automation", "resume", "tool-limit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: MacOS :: MacOS X",
+]
+dependencies = [
+    "pyautogui>=0.9.54",
+    "opencv-python>=4.9.0.80",
+    "Pillow>=10.2.0",
+    "pytesseract>=0.3.10",
+    "numpy>=1.26.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/khaterdev/cursor-resumer"
+"Bug Reports" = "https://github.com/khaterdev/cursor-resumer/issues"
+"Source Code" = "https://github.com/khaterdev/cursor-resumer"
+
+[project.scripts]
+cursor-resumer = "cursor_resumer.main:main"
+
+[tool.setuptools]
+packages = ["cursor_resumer"]

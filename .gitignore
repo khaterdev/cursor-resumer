@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+test_env/
+
+# Debug screenshots
+debug_screenshots/
+
+# Logs
+*.log
+auto-resume.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PID files
+.cursor-auto-resume.pid
+
+# PyPI config
+.pypirc
+.pypirc.example
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
